@@ -11,6 +11,14 @@ type List struct {
 	Head *Node
 }
 
+func New() *List {
+	return &List{}
+}
+
+func (this *List) Clear() {
+	this.Head = nil
+}
+
 func (this *List) Front() *Node {
 	return this.Head
 }
